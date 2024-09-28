@@ -9,7 +9,9 @@ const router = jsonServer.router(db);
 
 // Función para obtener la URL del servidor dinámicamente
 const getServerUrl = (req) => {
-  return `${req.protocol}://${req.get('host')}`;
+  const isLocal = req.get('host').includes('localhost') || req.get('host').includes('127.0.0.1');
+  const protocol = isLocal ? 'http' : 'https';
+  return `${protocol}://${req.get('host')}`;
 };
 
 // Función para prepend la URL del servidor a las rutas de imágenes
