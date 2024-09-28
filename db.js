@@ -3,6 +3,7 @@ const linksbread = require("./data/linksbread");
 const adImage = require("./data/adImage");
 const menuItems = require("./data/menuItem");
 const filterCategories = require("./data/filterCategories");
+const homepageItems = require("./data/homepageItems");
 module.exports = () => {
   return {
     adImage,
@@ -10,5 +11,6 @@ module.exports = () => {
     productsPLP,
     menuItems,
     filterCategories,
+    homepageItems
   };
 };

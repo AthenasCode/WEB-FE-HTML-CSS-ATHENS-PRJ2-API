@@ -42,7 +42,12 @@ server.use((req, res, next) => {
     }));
   }
   
-  // Aquí puedes agregar lógica similar para otros conjuntos de datos si es necesario
+  if (db.homepageItems) {
+    db.homepageItems = db.homepageItems.map(item => ({
+      ...item,
+      image: prependServerUrl(serverUrl, item.image)
+    }));
+  }
   
   next();
 });
