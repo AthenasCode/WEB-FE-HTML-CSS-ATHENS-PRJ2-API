@@ -1,10 +1,10 @@
 const productsPLP = require("./data/productsPLP");
-const courses = require("./data/courses");
+const linksbread = require("./data/linksbread");
 const adImage = require("./data/adImage");
 module.exports = () => {
   return {
     adImage,
+    linksbread,
     productsPLP,
-    courses,
   };
 };
