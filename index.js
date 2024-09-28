@@ -32,6 +32,13 @@ server.use((req, res, next) => {
       }))
     }));
   }
+
+  if (db.adImage) {
+    db.adImage = db.adImage.map(ad => ({
+      ...ad,
+      image: prependServerUrl(serverUrl, ad.image)
+    }));
+  }
   
   // Aquí puedes agregar lógica similar para otros conjuntos de datos si es necesario
   
