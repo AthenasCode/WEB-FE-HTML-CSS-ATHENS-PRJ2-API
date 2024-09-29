@@ -552,7 +552,7 @@ const productsPLP = [
         originalPrice: 2000000,
         discountedPrice: 1800000,
         discountPercentage: 10,
-        image: "/images/apple_watch8.png",
+        image: "images/apple_watch8.png",
       },
       {
         id: 47,
@@ -765,7 +765,7 @@ const productsPLP = [
         originalPrice: 600000,
         discountedPrice: 550000,
         discountPercentage: 8,
-        image: "images/estante_libros.png",
+        image: "images/estante_libro.png",
       },
       {
         id: 65,
