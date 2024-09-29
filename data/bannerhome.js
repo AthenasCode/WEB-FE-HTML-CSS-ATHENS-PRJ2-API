@@ -1,6 +1,6 @@
 const banner = [
     {
-      image: "images/imagenn.jpg",
+      image: "images/imagen2.jpg",
       text: "Aprovecha grandes descuentos",
       buttonLink: "#"
     },
@@ -10,7 +10,7 @@ const banner = [
       buttonLink: "#"
     },
     {
-      image: "images/imagenn.jpg",
+      image: "images/video.mp4",
       text: "Tus deseos hechos realidad",
       buttonLink: "#"
     }
