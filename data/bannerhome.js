@@ -1,6 +1,6 @@
 const banner = [
     {
-      image: "images/imagen2.jpg",
+      image: "images/video.mp4",
       text: "Aprovecha grandes descuentos",
       buttonLink: "#"
     },
